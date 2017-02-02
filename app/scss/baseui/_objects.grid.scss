@@ -1,0 +1,105 @@
+//todo use maps in loops
+//todo build offset or span-columns
+//todo modifiers for alignment left/center/right
+/**
+<div class="grid grid--gutter grid--2-small grid--3-medium grid--4-large">
+    <div class="grid__item">
+        <div class="card">
+            <div class="card__image">
+                <img class="image--responsive" src="/baseui/baseui-card-image.png" alt="nope">
+            </div>
+            <div class="card__content">
+                <div class="card__title">Card-Title 1</div>
+                <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                <a class="button card__link">los gehts</a>
+            </div>
+        </div>
+    </div>
+    <div class="grid__item">
+        ...
+    </div>
+    <div class="grid__item">
+        ...
+    </div>
+    <div class="grid__item">
+        ...
+    </div>
+</div>
+ */
+$grid-colums: 2 3 6;
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include bp(small) {
+        flex-direction: row;
+    }
+
+    &--gutter {
+        margin: 0;
+        @include bp(medium) {
+            margin: $space 0 0 0;
+        }
+
+        .grid__item {
+            padding: 0;
+            @include bp(small) {
+                //padding: $space 0 0 $space;
+            }
+        }
+    }
+
+    //create classes like: .grid-3 for 3 on a row with wrap
+    //todo use map in loop
+    //@for $i from 2 through 12 {
+    @each $i in $grid-colums {
+        &--#{$i}-extrasmall .grid__item {
+            flex: 0 0 calc(100% / #{$i});
+            max-width: calc(100% / #{$i});
+        }
+    }
+
+    @include bp(small) {
+        @each $i in $grid-colums {
+            &--#{$i}-small .grid__item {
+                flex: 0 0 calc(100% / #{$i});
+                max-width: calc(100% / #{$i});
+            }
+        }
+    }
+
+    @include bp(medium) {
+        @each $i in $grid-colums {
+            &--#{$i}-medium .grid__item {
+                flex: 0 0 calc(100% / #{$i});
+                max-width: calc(100% / #{$i});
+            }
+        }
+    }
+
+    @include bp(large) {
+        @each $i in $grid-colums {
+            &--#{$i}-large .grid__item {
+                flex: 0 0 calc(100% / #{$i});
+                max-width: calc(100% / #{$i});
+            }
+        }
+    }
+
+    @include bp(huge) {
+        @each $i in $grid-colums {
+            &--#{$i}-huge .grid__item {
+                flex: 0 0 calc(100% / #{$i});
+                max-width: calc(100% / #{$i});
+            }
+        }
+    }
+
+    &__item {
+        //display: flex; //same height items set as default
+        flex: 1;
+    }
+
+}

@@ -1,0 +1,22 @@
+.panel {
+    @include baseui-fontsize($font-size-base);
+
+    border-radius: $border-radius-default;
+    margin: $space*.5 0;
+    padding: $space;
+
+    &--success {
+        border: 1px solid darken($color-success, 20%);
+        background-color: $color-success;
+    }
+
+    &--warning {
+        border: 1px solid darken($color-warning, 20%);
+        background-color: $color-warning;
+    }
+
+    &--failure {
+        border: 1px solid darken($color-failure, 20%);
+        background-color: $color-failure;
+    }
+}

@@ -1,0 +1,34 @@
+a.button,
+button.button,
+input[type=button].button,
+input[type=reset].button,
+input[type=submit].button {
+    background-color: $color-primary;
+    border: 1px solid $color-border;
+    border-radius: $border-radius-default;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+    padding: $space*.25;
+    text-align: center;
+    display: inline-block;
+    @include baseui-fontsize(1.4rem);
+
+    &:hover {
+        background-color: darken($color-primary, 5%);
+    }
+
+    //doesn´t work on submits-elements
+    &--large {
+        @include baseui-fontsize($font-size-base*1.25);
+
+        font-weight: 600;
+        padding: $space*1.5 $space*1.75;
+    }
+
+    &--block {
+        width: 100%;
+        display: block;
+    }
+
+}

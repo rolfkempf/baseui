@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+//caution: there are some resets in this file
+
+body {
+    font-family: $font-basefont;
+}
+
+
+a {
+    color: $color-link;
+    text-decoration: none;
+    transition: all .3s;
+
+    &:hover {
+        color: darken($color-link, 20%);
+    }
+    &:active {
+        color: lighten($color-link, 20%);
+    }
+    &:visited {
+        color: lighten($color-link, 20%);
+    }
+}
+
+
+p {
+    @include baseui-fontsize($font-size-base);
+    margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0;
+}
+
+
+h1 {
+    @include baseui-fontsize($font-size-base*2);
+}
+
+
+h2 {
+    @include baseui-fontsize($font-size-base*1.8);
+}
+
+
+h3 {
+    @include baseui-fontsize($font-size-base*1.6);
+}
+
+
+h4 {
+    @include baseui-fontsize($font-size-base*1.4);
+}
+
+
+h5 {
+    color: $color-darkgray;
+    @include baseui-fontsize($font-size-base*1.2);
+    text-transform: uppercase;
+}
+
+
+h6 {
+    color: $color-darkgray;
+    @include baseui-fontsize($font-size-base);
+    text-transform: uppercase;
+}
+
+
+address {
+    font-style: normal;
+    line-height: inherit;
+}
+
+
+blockquote {
+    @include baseui-fontsize($font-size-base*1.5);
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+    quotes: '„' '“';
+
+    &:before {
+        content: open-quote;
+    }
+    &:after {
+        content: close-quote;
+    }
+}
+
+
+small {
+    color: lighten($color-font, 20%);
+    font-size: 50%;
+    font-weight: normal;
+}
+
+
+dl,
+ol,
+ul {
+    //text-indent: 1em;
+    padding-left: $font-size-base;
+    margin-left: $font-size-base;
+    margin-top: 0;
+
+    dl,
+    ul,
+    ol {
+        padding-left: $font-size-base;
+    }
+}
+
+
+dl {
+    list-style: none;
+}
+
+
+ul {
+    list-style: disc outside;
+}
+
+
+ol {
+    list-style: decimal outside;
+}
+
+
+dt,
+dd,
+li {
+    @include baseui-fontsize($font-size-base);
+}

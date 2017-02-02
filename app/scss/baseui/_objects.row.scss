@@ -1,0 +1,39 @@
+/**
+<header class="row page__header" role="banner"></header>
+<main class="row row--centered page__main"></main>
+ */
+.row {
+    display: block;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-bottom: $space;
+    padding-top: $space;
+
+    &--centered {
+        padding: 0 $space;
+        margin: 0 auto;
+
+        @include bp(small) {
+            width: map-get($breakpoints, 'small');
+        }
+
+        @include bp(medium) {
+            width: map-get($breakpoints, 'medium');
+        }
+
+        @include bp(large) {
+            width: map-get($breakpoints, 'large');
+        }
+
+        @include bp(huge) {
+            width: map-get($breakpoints, 'huge');
+        }
+    }
+
+    &--grey {
+        background-color: $color-lightgray;
+    }
+
+}

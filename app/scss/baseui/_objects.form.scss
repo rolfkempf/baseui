@@ -1,0 +1,47 @@
+.form {
+    @include baseui-flex-container(column, false, flex-start, flext-start, flext-start);
+    border-radius: $border-radius-default;
+
+    &__row {
+        overflow: hidden;
+    }
+
+    //the form´s title
+    &__title {
+        @include baseui-fontsize($font-size-base*1.5);
+        color: $color-darkgray;
+    }
+
+    //copytext to describe the forms function
+    &__text {
+        @include baseui-fontsize($font-size-base);
+        color: $color-darkgray;
+    }
+
+    //grouping inputs
+    &__group {
+        @include baseui-flex-container(column, false, flex-start, flext-start, flext-start);
+        padding: $space 0;
+    }
+
+    &__group-title {
+        @include baseui-fontsize($font-size-base*1);
+        color: $color-darkgray;
+    }
+
+    &__label {
+        color: #fff;
+        cursor: pointer;
+        font-weight: 400;
+        @include baseui-fontsize(2rem);
+    }
+
+    &__input {
+        display: flex;
+
+        &:focus {
+            background-color: lighten($color-secondary, 40%);
+            outline: none;
+        }
+    }
+}

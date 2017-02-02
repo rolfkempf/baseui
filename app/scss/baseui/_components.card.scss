@@ -1,0 +1,59 @@
+/** @example
+<div class="card">
+    <div class="card__image">
+        <img src="/baseui/baseui-card-image.png" alt="nope">
+    </div>
+    <div class="card__content">
+        <div class="card__title">card-__ttle</div>
+        <p class="card__text">
+            card__text dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!
+            Laudantium neque non odit rem voluptates? Ab accusamus dolorum error fugiat, itaque laboriosam odio quod ratione repudiandae voluptates? Labore, provident.
+        </p>
+        <a class="button card__link">card__link</a>
+    </div>
+</div>
+ */
+.card {
+    align-items: flex-start;
+    border: 1px solid $color-border;
+    border-radius: $border-radius-default;
+    display: flex;
+    flex-direction: column;
+
+    &--centered {
+        text-align: center;
+        align-items: center;
+    }
+
+    //the img´s container
+    &__image {
+        display: block;
+        justify-content: center;
+        width: 100%;
+        background-color: $color-lightgray;
+    }
+
+    //use if you need padding in the card´s content
+    &__content {
+        padding: $space;
+    }
+
+    //the title
+    &__title {
+        font-weight: 700;
+        @include baseui-fontsize(1.8rem);
+    }
+
+    //the text should not be more than ~3 lines
+    &__text {
+        @include baseui-fontsize(1.6rem, 1.5);
+        margin-bottom: $space;
+    }
+
+    //the link at the bottom
+    &__link {
+        display: block;
+        margin-top: auto;
+    }
+
+}

@@ -1,0 +1,18 @@
+.hero {
+    border-bottom: 1px solid $color-gray;
+    padding-bottom: $space*5;
+    padding-top: $space*5;
+
+    &__title {
+        @include baseui-fontsize(3rem, 2);
+    }
+
+    &__subtitle {
+        @include baseui-fontsize(2rem, 2);
+    }
+
+    &__lead {
+        @include baseui-fontsize(1.8rem, 2);
+        padding-bottom: $space*5;
+    }
+}

@@ -1,0 +1,78 @@
+/**
+set font-size and lineheight
+ */
+@mixin baseui-fontsize($fontsize, $lineheight:1.6) {
+    font-size: $fontsize;
+
+    @if ($lineheight) {
+        line-height: $lineheight;
+    } @else {
+        line-height: ($fontsize)*$lineheight;
+    }
+}
+
+
+/**
+setup an element to be a flex element, bypass default values
+ */
+@mixin baseui-flex-container( $flex-direction, $flex-wrap:false, $justify-content:false, $align-items:false, $align-content:false) {
+    display: flex;
+
+    @if $flex-direction {
+        flex-direction: $flex-direction;
+    }
+
+    @if $flex-wrap {
+        flex-wrap: $flex-wrap;
+    }
+
+    @if $justify-content {
+        justify-content: $justify-content;
+    }
+
+    @if $align-items {
+        align-items: $align-items;
+    }
+
+    @if $align-content {
+        align-content: $align-content;
+    }
+
+}
+
+
+/**
+setup an element to be a flex item, bypass default values
+ */
+@mixin baseui-flex-item() {
+}
+
+
+/**
+keep aspect ratio
+https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/ ... in comments-section
+scss-usage:
+.video {
+    @include baseui-aspectratio(16, 9);
+    // @include baseui-aspectratio(1.777777778);
+}
+ */
+@mixin baseui-aspectratio($ratio-or-width, $height: null) {
+    $padding: if($height, percentage($height/$ratio-or-width), percentage(1/$ratio-or-width));
+
+    &:before {
+        content: '';
+        float: left;
+        padding-bottom: $padding;
+    }
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+

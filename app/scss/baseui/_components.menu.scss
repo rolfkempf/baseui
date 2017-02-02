@@ -1,0 +1,86 @@
+/**
+<div class="menu">
+    <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
+        <li class="menu__item menu__item--active"><a class="menu__link" href="#">Item 2</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Item 3</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
+    </ul>
+</div>
+<div class="menu menu--vertical">
+    <ul class="menu__list ">
+        <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Item 2</a></li>
+        <li class="menu__item menu__item--active"><a class="menu__link" href="#">Item 3</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
+    </ul>
+</div>
+ */
+.menu {
+    position: relative;
+
+    //the ul
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        @include bp(small) {
+            flex-direction: row;
+        }
+    }
+
+    //vertical menu
+    &--vertical {
+        //todo calling full class name... can this be done cooler?
+        .menu__list {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+        }
+    }
+
+    //th li
+    &__item {
+        text-align: center;
+        transition: all 0.5s;
+        flex: auto;
+
+        //state active
+        &--active, &--ancestor--active {
+            background-color: $color-lightgray;
+
+            //todo add child ".menu__link{}" for active links (links inside of active li)
+        }
+
+        &:hover, &:focus {
+            background-color: darken($color-lightgray, 3);
+        }
+
+        &--parent {
+        }
+
+    }
+
+    //a-elements
+    &__link {
+        color: $color-link;
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: $space;
+
+        &:hover, &:focus {
+            background-color: lighten($color-lightgray, 2%);
+        }
+    }
+
+    //sub-menu
+    &__sub-menu {
+
+        &__item {
+        }
+    }
+}

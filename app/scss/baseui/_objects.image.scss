@@ -1,0 +1,11 @@
+.image {
+
+    &--responsive {
+        max-width: 100%;
+    }
+
+    &--circle {
+        border-radius: 50%;
+    }
+
+}
