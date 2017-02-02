@@ -2,6 +2,7 @@
     @include baseui-flex-container(column, false, flex-start, flext-start, flext-start);
     border-radius: $border-radius-default;
 
+    //todo whats this?
     &__row {
         overflow: hidden;
     }

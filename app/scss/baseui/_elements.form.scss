@@ -7,7 +7,7 @@ input[type='text'],
 input[type='url'],
 textarea,
 select {
-    appearance: none;
+    //appearance: none;
     background-color: $color-body;
     //border: 0px solid transparent;
     border: 1px solid darken($color-border, 15%);
@@ -19,9 +19,8 @@ select {
     transition: all .3s;
 
     &:focus {
-        border: 0px solid transparent;
-        //border: 1px solid darken($color-border, 25%);
-        //box-shadow: 0 0 5px $color-darkgray;
+        border: 1px solid darken($color-border, 25%);
+        box-shadow: 0 0 5px $color-darkgray;
         outline: 0;
     }
 

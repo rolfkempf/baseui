@@ -45,7 +45,21 @@
     </main>
 </div>
 
+
+<br>
+<hr>
+
+
 <div class="row">
+    <div class="row--centered">
+        <h2>Menus</h2>
+    </div>
+
+    <div class="row--centered">
+        <h3>Menu
+            <small>horizontal inside a .row</small>
+        </h3>
+    </div>
     <div class="menu ">
         <ul class="menu__list ">
             <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
@@ -54,6 +68,120 @@
             <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
         </ul>
     </div>
+    <div class="row--centered">
+        <hr>
+        <h3>Menu
+            <small>.menu--vertical inside a .grid</small>
+        </h3>
+
+        <div class="grid">
+            <div class="grid__item">
+                <div class="menu menu--vertical">
+                    <ul class="menu__list ">
+                        <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Item 2</a></li>
+                        <li class="menu__item menu__item--active"><a class="menu__link" href="#">Item 3</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid__item"></div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<br>
+<hr>
+
+<div class="row row--centered">
+
+    <h2>Panel
+        <small>inside a .row.row--centered</small>
+    </h2>
+
+    <div class="panel ">
+        I´m a panel
+    </div>
+
+    <div class="panel panel--success">
+        I´m a success-panel, i´m happy.
+    </div>
+
+    <div class="panel panel--warning">
+        I´m a warning-panel, is something wrong?
+    </div>
+
+    <div class="panel panel--failure">
+        There IS definitely something wrong. Trust me, i´m a failure-panel
+    </div>
+</div>
+
+
+<br>
+<hr>
+
+<div class="row row--centered">
+
+    <h2>Table</h2>
+    <table class="table table--striped">
+        <tr>
+            <th>Name</th>
+            <th>Power</th>
+        </tr>
+        <tr>
+            <td>Wolverine</td>
+            <td>Healing Factor</td>
+        </tr>
+        <tr>
+            <td>Cyclops</td>
+            <td>Optical Blast</td>
+        </tr>
+        <tr>
+            <td>Longshot</td>
+            <td>Luck</td>
+        </tr>
+        <tr>
+            <td>Dazzler</td>
+            <td>Light manipulation</td>
+        </tr>
+    </table>
+</div>
+
+
+<br>
+<hr>
+
+
+<div class="row row--centered">
+    <h2>Forms</h2>
+
+    <form action="" class="form">
+        <div class="form__title">A sample form</div>
+        <p class="form__text">
+            I´m a text explaining this form. Good luck and thanks for all the fish.
+        </p>
+        <div class="form__group">
+            <label class="form_label">
+                Type something
+                <input class="form__input" type="text">
+            </label>
+        </div>
+
+        <div class="form__group">
+            <label class="form_label">
+                Select me
+                <select class="form__input">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+            </label>
+
+        </div>
+    </form>
 </div>
 
 
