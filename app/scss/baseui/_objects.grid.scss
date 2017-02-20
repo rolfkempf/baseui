@@ -1,4 +1,4 @@
-//todo use maps in loops
+
 //todo build offset or span-columns
 //todo modifiers for alignment left/center/right
 /**
@@ -46,7 +46,7 @@ $grid-colums: 2 3 6;
         .grid__item {
             padding: 0;
             @include bp(small) {
-                //padding: $space 0 0 $space;
+                padding: $space $space 0 $space;
             }
         }
     }
