@@ -26,6 +26,11 @@ gulp.task('copyhtml', ['clean'], function () {
         .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('copyimages', ['clean'], function () {
+    gulp.src('./app/images/**/*.*')
+        .pipe(gulp.dest('./dist/images/'));
+});
+
 
 //copy all css files to dist
 gulp.task('copycss', ['clean'], function () {
@@ -86,4 +91,4 @@ gulp.task('serve:dist', ['build'], function () {
 });
 
 //build
-gulp.task('build', ['clean', 'scss', 'copycss', 'copyhtml', 'transformcss']);
+gulp.task('build', ['clean', 'scss', 'copycss', 'copyhtml', 'copyimages', 'transformcss']);

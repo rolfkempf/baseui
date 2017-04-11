@@ -94,7 +94,7 @@ blockquote {
 
 small {
     color: lighten($color-font, 20%);
-    font-size: 50%;
+    font-size: 80%;
     font-weight: normal;
 }
 
@@ -134,4 +134,35 @@ dt,
 dd,
 li {
     @include baseui-fontsize($font-size-base);
+}
+
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+
+sub {
+    bottom: -0.25em;
+}
+
+
+sup {
+    top: -0.5em;
 }
