@@ -9,7 +9,7 @@ input[type=submit].button {
     color: #fff;
     cursor: pointer;
     transition: all .3s;
-    padding: $space*.25;
+    padding: $space $space*2.5;
     text-align: center;
     display: inline-block;
     @include baseui-fontsize(1.4rem);

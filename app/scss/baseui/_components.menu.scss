@@ -72,6 +72,10 @@
         font-weight: 300;
         padding: $space;
 
+        &--disabled {
+            cursor: not-allowed;
+        }
+
         &:hover, &:focus {
             background-color: lighten($color-lightgray, 2%);
         }

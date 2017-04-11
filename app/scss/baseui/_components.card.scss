@@ -25,6 +25,12 @@
         align-items: center;
     }
 
+    //does this make sense?
+    &--align-right {
+        text-align: right;
+        align-items: flex-end;
+    }
+
     //the img´s container
     &__image {
         display: block;

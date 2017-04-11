@@ -3,6 +3,9 @@ baseui
 based on the idea of ITCSS
 https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
 */
+//
+//
+//
 /* --------------------------------------------------------------------------------
 SETTINGS: variables
  */
@@ -11,34 +14,37 @@ SETTINGS: variables
 @import "settings.radius";
 @import "settings.fonts";
 @import "settings.breakpoints";
+//
+//
+//
 /* --------------------------------------------------------------------------------
 TOOLS: mixins, helpers, functions, ...
  */
-//custom basui mixins
 @import "tools.mixins";
-//s nice scss breakpoints-mixin
 @import "tools.mappy-breakpoints";
+//
+//
+//
 /* --------------------------------------------------------------------------------
 GENERIC: default behaviour for html, body
  */
-//normalize.css v5.0.0
-//border-box everything
-@import "generic.box-sizing";
-//apply custom rules, add generic "hacks"
 @import "generic.base";
+//
+//
+//
 /* --------------------------------------------------------------------------------
 ELEMENTS: default styles for html-elements
  */
 @import "elements.divider";
-//form related elements: form, inputs, fieldset, ...
 @import "elements.form";
-//all elements important for typography: paragraphs, lists, headlines, ...
 @import "elements.typography";
 @import "elements.table";
-//todo what to do with print?
 @import "print";
+//
+//
+//
 /* --------------------------------------------------------------------------------
-OBJECTS: higher level classes that are rarely changed
+OBJECTS: higher level CSS-CLASSES; no cosmetic design patterns
  */
 @import "objects.form";
 @import "objects.grid";
@@ -47,8 +53,11 @@ OBJECTS: higher level classes that are rarely changed
 @import "objects.table";
 @import "objects.panel";
 @import "objects.row";
+//
+//
+//
 /* --------------------------------------------------------------------------------
-COMPONENTS: specific classes subject to change
+COMPONENTS: collections of objects; specific UI-styling
  */
 //todo is a button really a component?
 @import "components.button";
@@ -56,12 +65,12 @@ COMPONENTS: specific classes subject to change
 @import "components.content";
 @import "components.hero";
 @import "components.menu";
-//todo remove page?
-@import "components.page";
+@import "components.copy";
+//
+//
+//
 /* --------------------------------------------------------------------------------
 TRUMPS: overrides, hacks, defence-files
  */
-//needfull css things: clearfix
 @import "trumps.utilities";
-// use custom file to build custom styles
 @import "trumps.custom";

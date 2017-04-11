@@ -1,4 +1,3 @@
-
 //todo build offset or span-columns
 //todo modifiers for alignment left/center/right
 /**
@@ -58,6 +57,13 @@ $grid-colums: 2 3 6;
         &--#{$i}-extrasmall .grid__item {
             flex: 0 0 calc(100% / #{$i});
             max-width: calc(100% / #{$i});
+            //remove padding on outer children
+            &:nth-child(n+0) {
+                padding-left: 0;
+            }
+            &:nth-child(n+#{$i}) {
+                padding-right: 0;
+            }
         }
     }
 
@@ -66,6 +72,13 @@ $grid-colums: 2 3 6;
             &--#{$i}-small .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
+                //remove padding on outer children
+                &:nth-child(n+0) {
+                    padding-left: 0;
+                }
+                &:nth-child(n+#{$i}) {
+                    padding-right: 0;
+                }
             }
         }
     }
@@ -75,6 +88,13 @@ $grid-colums: 2 3 6;
             &--#{$i}-medium .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
+                //remove padding on outer children
+                &:nth-child(n+0) {
+                    padding-left: 0;
+                }
+                &:nth-child(n+#{$i}) {
+                    padding-right: 0;
+                }
             }
         }
     }
@@ -84,6 +104,13 @@ $grid-colums: 2 3 6;
             &--#{$i}-large .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
+                //remove padding on outer children
+                //&:nth-child(n+0) {
+                //    padding-left: 0;
+                //}
+                //&:nth-child(n+#{$i}) {
+                //    padding-right: 0;
+                //}
             }
         }
     }

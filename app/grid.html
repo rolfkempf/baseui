@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>baseui - just do less</title>
+    <title>baseui - grid</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
@@ -12,44 +12,127 @@
 
 
 <div class="row row--centered hero">
-    <main>
-        <h1 class="hero__title">
-            baseui
-            <small>a very limited css-framework</small>
-        </h1>
-        <p class="hero__lead">
-            Good designers don´t ask what can be added but what can be removed to improve the results.
-            <br>
-            <strong>baseui</strong> tries to provide you with a minimal style setup that you can build upon.
-        </p>
-        <div class="grid grid--gutter">
-            <div class="grid__item">
-                <h2 class="hero__subtitle">Features</h2>
-                <ul>
-                    <li>Based on the idea of <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/"><strong>ITCSS</strong></a></li>
-                    <li>Usage of <a href="https://en.bem.info/methodology/"><strong>BEM</strong></a> methodology</li>
-                    <li><strong>scss</strong> as preprocessor</li>
-                    <li>simple <strong>gulp workflow</strong></li>
-                </ul>
-            </div>
-            <div class="grid__item">
-                <h2 class="hero__subtitle">Goals</h2>
-                <ul>
-                    <li>small footprint (get smaller than 14KB)</li>
-                    <li>low <a target="_blank" href="https://jonassebastianohlsson.com/specificity-graph/"><strong>specificity</strong></a></li>
-                    <li>as <strong>few dependancies</strong> as possible</li>
-                    <li><strong>predictability</strong>: know where to look</li>
-                </ul>
-            </div>
+    <a class="" href="index.html">Home</a>
+    <h1 class="hero__title">
+        baseui
+        <small>a very limited css-framework</small>
+    </h1>
+
+    <div class="menu">
+        <ul class="menu__list ">
+            <li class="menu__item"><a class="menu__link" href="typography.html">Typography</a></li>
+            <li class="menu__item"><a class="menu__link" href="card.html">Card</a></li>
+            <li class="menu__item"><a class="menu__link" href="form.html">Form</a></li>
+            <li class="menu__item menu__item--active"><a class="menu__link" href="grid.html">Grid</a></li>
+            <li class="menu__item"><a class="menu__link" href="menu.html">Menu</a></li>
+            <li class="menu__item"><a class="menu__link" href="panel.html">Panel</a></li>
+        </ul>
+    </div>
+
+    <hr>
+    <div class="row">
+
+
+        <div class="panel panel--failure">
+            the gutter is still buggy
         </div>
-    </main>
-</div>
+
+        <div class="panel">
+            6 <b>.grid__item</b>s in a <b>.grid.grid--3-small</b>.
+            <br>
+            Meaning there are 6 items in a gutterless grid, 3 in a row in breakpoint small and upwards. Starting at breakpoint huge, there are 6 in a row.
+        </div>
+
+        <div class="grid  grid--3-small grid--6-huge">
+            <div class="grid__item">
+                <div class="card">
+                    <div class="card__image">
+                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">Card-Title</div>
+                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        <a class="button card__link">los gehts</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__item">
+                <div class="card">
+                    <div class="card__image">
+                        <img class="image--responsive" src="images/wdmu.png" alt="wtf">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">Card-Title</div>
+                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        <a class="button card__link">los gehts</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__item">
+                <div class="card">
+                    <div class="card__image">
+                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">Card-Title</div>
+                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        <a class="button card__link">los gehts</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__item">
+                <div class="card card--centered">
+                    <div class="card__image">
+                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">Card-Title</div>
+                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        <a class="button card__link">los gehts</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__item">
+                <div class="card card--align-right">
+                    <div class="card__image">
+                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">Card-Title</div>
+                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        <a class="button card__link">los gehts</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid__item">
+                <div class="card">
+                    <div class="card__image">
+                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">Card-Title</div>
+                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        <a class="button card__link">los gehts</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
-<br>
-<hr>
-<div class="row">
-    <div class="grid grid--gutter grid--2-small grid--3-medium grid--6-large">
+    <div class="panel">
+        6 <b>.grid__item</b>s in a <b>.grid.grid--gutter.grid--3-small</b>.
+        <br>
+        The same as above but with gutter (<b>.grid--gutter</b>)
+    </div>
+
+    <div class="grid grid--gutter grid--3-small grid--6-huge">
         <div class="grid__item">
             <div class="card">
                 <div class="card__image">
@@ -103,7 +186,7 @@
         </div>
 
         <div class="grid__item">
-            <div class="card">
+            <div class="card card--align-right">
                 <div class="card__image">
                     <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
                 </div>
@@ -131,152 +214,9 @@
     </div>
 </div>
 
-<br>
-<hr>
-
-
-<div class="row">
-    <div class="row--centered">
-        <h2>Menus</h2>
-    </div>
-
-    <div class="row--centered">
-        <h3>Menu
-            <small>horizontal inside a .row</small>
-        </h3>
-    </div>
-    <div class="menu ">
-        <ul class="menu__list ">
-            <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Item 2</a></li>
-            <li class="menu__item menu__item--active"><a class="menu__link" href="#">Item 3</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
-        </ul>
-    </div>
-    <div class="row--centered">
-        <hr>
-        <h3>Menu
-            <small>.menu--vertical inside a .grid</small>
-        </h3>
-
-        <div class="grid">
-            <div class="grid__item">
-                <div class="menu menu--vertical">
-                    <ul class="menu__list ">
-                        <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Item 2</a></li>
-                        <li class="menu__item menu__item--active"><a class="menu__link" href="#">Item 3</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid__item"></div>
-
-        </div>
-    </div>
-
 
 </div>
 
-<br>
-<hr>
-
-<div class="row row--centered">
-
-    <h2>Panel
-        <small>inside a .row.row--centered</small>
-    </h2>
-
-    <div class="panel ">
-        I´m a panel
-    </div>
-
-    <div class="panel panel--success">
-        I´m a success-panel, i´m happy.
-    </div>
-
-    <div class="panel panel--warning">
-        I´m a warning-panel, is something wrong?
-    </div>
-
-    <div class="panel panel--failure">
-        There IS definitely something wrong. Trust me, i´m a failure-panel
-    </div>
-</div>
-
-
-<br>
-<hr>
-
-<div class="row row--centered">
-
-    <h2>Table</h2>
-    <table class="table table--striped">
-        <tr>
-            <th>Name</th>
-            <th>Power</th>
-        </tr>
-        <tr>
-            <td>Wolverine</td>
-            <td>Healing Factor</td>
-        </tr>
-        <tr>
-            <td>Cyclops</td>
-            <td>Optical Blast</td>
-        </tr>
-        <tr>
-            <td>Longshot</td>
-            <td>Luck</td>
-        </tr>
-        <tr>
-            <td>Dazzler</td>
-            <td>Light manipulation</td>
-        </tr>
-    </table>
-</div>
-
-
-<br>
-<hr>
-
-
-<div class="row row--centered">
-    <h2>Forms</h2>
-
-    <form action="" class="form">
-        <div class="form__title">A sample form</div>
-        <p class="form__text">
-            I´m a text explaining this form. Good luck and thanks for all the fish.
-        </p>
-        <div class="form__group">
-            <label class="form_label">
-                Type something
-                <input class="form__input" type="text">
-            </label>
-        </div>
-
-        <div class="form__group">
-            <label class="form_label">
-                Select me
-                <select class="form__input">
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                </select>
-            </label>
-
-        </div>
-    </form>
-
-
-</div>
-
-<hr>
-<div class="row row--centered">
-    <div class="panel panel--warning">
-        <h3>Many elements still need some developer-love :)</h3>
-    </div>
-</div>
 
 </body>
 </html>

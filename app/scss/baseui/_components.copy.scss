@@ -1,0 +1,17 @@
+/**
+.copy adds one level of inheritance
+useful for content coming from a content-management-system
+ */
+.copy {
+
+    //all first level (except the first element) elements of .copy have margin-top
+    > * + * {
+        margin-top: $space*2;
+        display: block;
+    }
+
+    //hide all empty elements
+    > :empty {
+        display: none;
+    }
+}
