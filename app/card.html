@@ -1,141 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>baseui - card</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>baseui - card</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
 
 
-<div class="row row--centered hero">
-    <a class="" href="index.html">Home</a>
-    <h1 class="hero__title">
-        baseui
-        <small>a very limited css-framework</small>
-    </h1>
-
-    <div class="menu">
-        <ul class="menu__list ">
-            <li class="menu__item"><a class="menu__link" href="typography.html">Typography</a></li>
-            <li class="menu__item menu__item--active"><a class="menu__link" href="card.html">Card</a></li>
-            <li class="menu__item"><a class="menu__link" href="form.html">Form</a></li>
-            <li class="menu__item"><a class="menu__link" href="grid.html">Grid</a></li>
-            <li class="menu__item"><a class="menu__link" href="menu.html">Menu</a></li>
-            <li class="menu__item"><a class="menu__link" href="panel.html">Panel</a></li>
-        </ul>
-    </div>
-
-    <hr>
-    <div class="panel">
-        A stand-alone card
-    </div>
-    <div class="row">
-        <div class="card">
-            <div class="card__image">
-                <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
+        <header class="row hero">
+            <div class="row--centered">
+                <a class="" href="index.html">Home</a>
+                <h1 class="hero__title">
+                    baseui
+                    <small>a very limited css-framework</small>
+                </h1>
             </div>
-            <div class="card__content">
-                <div class="card__title">Card-Title 1</div>
-                <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
-                <a class="button card__link">Go Bunny</a>
+        </header>
+
+        <div class="row row--centered ">
+            <h1>Card</h1>
+        </div>
+
+
+        <div class="row row--centered row--spaced">
+            <h2>A stand-alone card</h2>
+            <div class="panel panel--info">
+                Cards are block-level-elements and take up all available space.
+            </div>
+            <div class="row">
+                <div class="card">
+                    <div class="card__image">
+                        <img class="image--responsive" src="images/baseui-cow.jpg" alt="it´s a cow">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">Card-Title 1</div>
+                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        <a class="button button--block  card__link">Go Bunny</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <div class="panel">
-        Cards inside a <b>.row</b> and <b>.grid</b>
-    </div>
-    <div class="row">
-        <div class="grid grid--gutter grid--3-small grid--6-medium">
-            <div class="grid__item">
-                <div class="card">
-                    <div class="card__image">
-                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__title">Card-Title</div>
-                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
-                        <a class="button card__link">los gehts</a>
+        <div class="row row--centered row--spaced">
+            <h2>A stand-alone card</h2>
+            <div class="panel panel--warning">
+                Cards inside a <b>.row</b> and <b>.grid</b>
+            </div>
+            <div class="grid grid--gutter grid--3-small grid--4-medium grid--6-huge">
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="it´s a cow">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                            <a class="button button--block  card__link">los gehts</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid__item">
-                <div class="card">
-                    <div class="card__image">
-                        <img class="image--responsive" src="images/wdmu.png" alt="wtf">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__title">Card-Title</div>
-                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
-                        <a class="button card__link">los gehts</a>
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="it´s a cow">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                            <a class="button button--block  card__link">los gehts</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid__item">
-                <div class="card">
-                    <div class="card__image">
-                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__title">Card-Title</div>
-                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
-                        <a class="button card__link">los gehts</a>
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="it´s a cow">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                            <a class="button button--block  card__link">los gehts</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid__item">
-                <div class="card card--centered">
-                    <div class="card__image">
-                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__title">Card-Title</div>
-                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
-                        <a class="button card__link">los gehts</a>
+                <div class="grid__item">
+                    <div class="card card--centered">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="it´s a cow">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                            <a class="button button--block  card__link">los gehts</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid__item">
-                <div class="card card--align-right">
-                    <div class="card__image">
-                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__title">Card-Title</div>
-                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
-                        <a class="button card__link">los gehts</a>
+                <div class="grid__item">
+                    <div class="card card--align-right">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="it´s a cow">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                            <a class="button button--block  card__link">los gehts</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid__item">
-                <div class="card">
-                    <div class="card__image">
-                        <img class="image--responsive image--circle" src="images/wdmu.png" alt="wtf">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__title">Card-Title</div>
-                        <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
-                        <a class="button card__link">los gehts</a>
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="it´s a cow">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                            <a class="button button--block  card__link">los gehts</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
 
-
-</div>
-
-
-</body>
+    </body>
 </html>

@@ -25,7 +25,7 @@
     </div>
 </div>
  */
-$grid-colums: 2 3 6;
+$grid-colums: 2 3 4;
 
 .grid {
     display: flex;
@@ -38,31 +38,15 @@ $grid-colums: 2 3 6;
 
     &--gutter {
         margin: 0;
-        @include bp(medium) {
-            margin: $space 0 0 0;
+        @include bp(small) {
+            margin: $space -$space 0 -$space;
         }
 
         .grid__item {
             padding: 0;
+            display: flex;
             @include bp(small) {
                 padding: $space $space 0 $space;
-            }
-        }
-    }
-
-    //create classes like: .grid-3 for 3 on a row with wrap
-    //todo use map in loop
-    //@for $i from 2 through 12 {
-    @each $i in $grid-colums {
-        &--#{$i}-extrasmall .grid__item {
-            flex: 0 0 calc(100% / #{$i});
-            max-width: calc(100% / #{$i});
-            //remove padding on outer children
-            &:nth-child(n+0) {
-                padding-left: 0;
-            }
-            &:nth-child(n+#{$i}) {
-                padding-right: 0;
             }
         }
     }
@@ -72,13 +56,6 @@ $grid-colums: 2 3 6;
             &--#{$i}-small .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
-                //remove padding on outer children
-                &:nth-child(n+0) {
-                    padding-left: 0;
-                }
-                &:nth-child(n+#{$i}) {
-                    padding-right: 0;
-                }
             }
         }
     }
@@ -88,13 +65,6 @@ $grid-colums: 2 3 6;
             &--#{$i}-medium .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
-                //remove padding on outer children
-                &:nth-child(n+0) {
-                    padding-left: 0;
-                }
-                &:nth-child(n+#{$i}) {
-                    padding-right: 0;
-                }
             }
         }
     }
@@ -104,13 +74,6 @@ $grid-colums: 2 3 6;
             &--#{$i}-large .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
-                //remove padding on outer children
-                //&:nth-child(n+0) {
-                //    padding-left: 0;
-                //}
-                //&:nth-child(n+#{$i}) {
-                //    padding-right: 0;
-                //}
             }
         }
     }
@@ -122,11 +85,6 @@ $grid-colums: 2 3 6;
                 max-width: calc(100% / #{$i});
             }
         }
-    }
-
-    &__item {
-        //display: flex; //same height items set as default
-        flex: 1;
     }
 
 }

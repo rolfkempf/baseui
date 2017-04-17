@@ -29,23 +29,26 @@ TOOLS: mixins, helpers, functions, ...
 GENERIC: default behaviour for html, body
  */
 @import "generic.base";
+@import "generic.print";
 //
 //
 //
 /* --------------------------------------------------------------------------------
 ELEMENTS: default styles for html-elements
  */
-@import "elements.divider";
 @import "elements.form";
 @import "elements.typography";
 @import "elements.table";
-@import "print";
 //
 //
 //
 /* --------------------------------------------------------------------------------
 OBJECTS: higher level CSS-CLASSES; no cosmetic design patterns
+"classed" html.elements: "better" styling for html-elements (for example by adding .form to form-element)
+layout-classes (row, grid)
  */
+@import "objects.button";
+@import "objects.divider";
 @import "objects.form";
 @import "objects.grid";
 @import "objects.image";
@@ -53,19 +56,17 @@ OBJECTS: higher level CSS-CLASSES; no cosmetic design patterns
 @import "objects.table";
 @import "objects.panel";
 @import "objects.row";
+@import "objects.card";
+@import "objects.copy";
+@import "objects.hero";
+@import "objects.menu";
 //
 //
 //
 /* --------------------------------------------------------------------------------
 COMPONENTS: collections of objects; specific UI-styling
+pages, page-elements, widgets
  */
-//todo is a button really a component?
-@import "components.button";
-@import "components.card";
-@import "components.content";
-@import "components.hero";
-@import "components.menu";
-@import "components.copy";
 //
 //
 //

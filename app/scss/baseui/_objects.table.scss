@@ -1,5 +1,28 @@
 .table {
 
+    &--compact {
+        td, th {
+            padding: 0;
+            @include baseui-fontsize($font-size-base*.8);
+        }
+    }
+
+    &--cozy {
+        td, th {
+            padding: $space*1.5 $space*2.5;
+        }
+    }
+
+    &--bordered {
+        border: 1px solid $color-border;
+    }
+
+    &--lined {
+        tr {
+            border-bottom: 1px solid $color-border;
+        }
+    }
+
     &--striped {
         tbody tr:nth-child(odd) {
             background-color: $color-lightgray;

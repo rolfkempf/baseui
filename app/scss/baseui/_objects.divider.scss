@@ -4,3 +4,13 @@ hr {
     margin-bottom: $space;
     margin-top: $space;
 }
+
+
+//todo move to objects
+.divider {
+    margin: $space 0;
+
+    &--big {
+        margin: $space*5 0
+    }
+}

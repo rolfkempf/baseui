@@ -1,6 +1,9 @@
 .hero {
     padding-bottom: $space*5;
     padding-top: $space*5;
+    margin-bottom: $space*5;
+
+    background-color: $color-lightgray;
 
     &__title {
         @include baseui-fontsize(3rem, 2);

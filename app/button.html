@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>baseui - button</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <header class="row hero">
+            <div class="row--centered">
+                <a class="" href="index.html">Home</a>
+                <h1 class="hero__title">
+                    baseui
+                    <small>a very limited css-framework</small>
+                </h1>
+            </div>
+        </header>
+
+        <div class="row row--centered ">
+            <h1>Button</h1>
+            <p>Default buttons and some variations.</p>
+        </div>
+
+
+        <div class="row row--centered row-spaced">
+
+            <div class="row row--spaced">
+                <h2>Default buttons</h2>
+                <div class="panel panel--info">
+                    Default button (button-tag ord input syle submit/button)
+                </div>
+                <input type="button" value="input type button">
+                <input type="submit" value="input type submit">
+                <button>a classless button</button>
+            </div>
+            <div class="row row--spaced">
+                <h2>Button-Objects</h2>
+                <div class="panel panel--info">
+                    As above but with class "button" added
+                </div>
+                <input class="button" type="button" value="input type button">
+                <input class="button" type="submit" value="input type submit">
+                <button class="button">a classless button</button>
+            </div>
+
+            <div class="row row--spaced">
+                <h2>Variation "large"</h2>
+                <div class="panel panel--info">
+                    Want large buttons? Add .button--large.
+                </div>
+                <button class="button button--large">button.button.button--large</button>
+            </div>
+
+            <div class="row row--spaced">
+                <h2>Variation "block"</h2>
+                <div class="panel panel--info">
+                    Block buttons take up all available space
+                </div>
+                <button class="button button--block">button.button.button--block</button>
+            </div>
+
+            <div class="row row--spaced">
+                <h2>Variations for special cases: info, success, warning and failure</h2>
+                <div class="panel panel--info">
+                    Depending on the use case you might need some of these.
+                </div>
+                <div class="row">
+                    <button class="button button--info">Info</button>
+                </div>
+                <div class="row">
+                    <button class="button button--success">Success</button>
+                </div>
+                <div class="row">
+                    <button class="button button--failure">Failure</button>
+                </div>
+                <div class="row">
+                    <button class="button button--warning">Warning</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

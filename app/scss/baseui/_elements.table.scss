@@ -4,6 +4,19 @@ table {
 }
 
 
+th {
+    @include baseui-fontsize($font-size-base);
+    font-weight: bold;
+    padding: $space*.5 $space;
+    text-align: left;
+}
+
+
 td {
     padding: $space*.5 $space;
+    @include baseui-fontsize($font-size-base);
 }
+
+
+//alignment via utility module .align
+

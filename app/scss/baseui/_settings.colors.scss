@@ -1,3 +1,4 @@
+// edit these to your needs
 $color-primary: #1384d3; //primary or brand color
 $color-secondary: #51b8f4;
 $color-lightgray: #F7F7F7;
@@ -5,11 +6,12 @@ $color-gray: #cbcbcb;
 $color-darkgray: #5a5a5a;
 $color-body: #ffffff; //the color for the background of the page (body-element)
 $color-font: #202020; //default color for text
-$color-border: $color-lightgray; //default color for borders
+$color-border: darken($color-lightgray, 5%); //default color for borders
 $color-button-bg: darken($color-lightgray, 10%); //default-bg-color for buttons
 $color-button-border: lighten($color-darkgray, 15%); //default-color for buttons-buttons
 $color-link: $color-primary; //default-color for links
 
 $color-success: #4dff91;
+$color-info: #dcf7ff;
 $color-warning: #ffbc2b;
 $color-failure: #ff6e68;

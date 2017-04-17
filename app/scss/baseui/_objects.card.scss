@@ -19,6 +19,7 @@
     border-radius: $border-radius-default;
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     &--centered {
         text-align: center;
@@ -36,12 +37,12 @@
         display: block;
         justify-content: center;
         width: 100%;
-        background-color: $color-lightgray;
     }
 
     //use if you need padding in the card´s content
     &__content {
         padding: $space;
+        width: 100%;
     }
 
     //the title

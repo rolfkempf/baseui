@@ -1,103 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>baseui - just do less</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>baseui - just do less</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <header class="row hero">
+            <div class="row--centered">
+                <a class="" href="index.html">Home</a>
+                <h1 class="hero__title">
+                    baseui
+                    <small>a very limited css-framework</small>
+                </h1>
+            </div>
+        </header>
+
+        <div class="row row--centered row-spaced">
+            <h1>Typography</h1>
+        </div>
+
+        <div class="row row--centered row--spaced">
+            <h2>Text with default styling</h2>
 
 
-<div class="row row--centered hero">
-    <a class="" href="index.html">Home</a>
-    <h1 class="hero__title">
-        baseui
-        <small>a very limited css-framework</small>
-    </h1>
-
-    <div class="menu">
-        <ul class="menu__list ">
-            <li class="menu__item menu__item--active"><a class="menu__link" href="typography.html">Typography</a></li>
-            <li class="menu__item"><a class="menu__link" href="card.html">Card</a></li>
-            <li class="menu__item"><a class="menu__link" href="form.html">Form</a></li>
-            <li class="menu__item"><a class="menu__link" href="grid.html">Grid</a></li>
-            <li class="menu__item"><a class="menu__link" href="menu.html">Menu</a></li>
-            <li class="menu__item"><a class="menu__link" href="panel.html">Panel</a></li>
-        </ul>
-    </div>
-    <hr>
-    <div class="panel ">
-        In the first example you see plain HTML-elements (h1, p, ...) with the minimal styling found in the <b>settings-files</b> and some files like <b>_typography.scss</b> and <b>_generic.base.scss</b>
-    </div>
-    <h1>Headline h1</h1>
-    <h1>Headline h1
-        <small>with small, so cute</small>
-    </h1>
-    <p>
-        Followed by paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at atque cumque cupiditate delectus dolore eum illo laborum maxime neque numquam, odit omnis quod reprehenderit sequi tenetur veritatis voluptatum.
-    </p>
-    <h2>This is a h2 headline</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ipsa, placeat! Accusantium adipisci aut dolores excepturi facere iure magni nihil odio provident quas qui sequi tempora, vel? Fuga, maiores, velit. Accusantium blanditiis commodi corporis cupiditate debitis dolore dolorem eius
-        error, explicabo fugit iure laudantium molestiae necessitatibus nostrum numquam odit officia officiis quas quidem repellendus, sint sunt tempora, ut vel voluptates.
-    </p>
-    <blockquote>
-        Sometimes we need a blockquote
-    </blockquote>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at atque cumque cupiditate delectus dolore eum illo laborum maxime neque numquam, odit omnis quod reprehenderit sequi tenetur veritatis voluptatum.
-    </p>
-    <h3>Down to h3</h3>
-    <b>A short list</b>
-    <ul>
-        <li>List item 1</li>
-        <li>One more item in the List</li>
-        <li>Three is a very good number. Nearly as good as 42!</li>
-    </ul>
-
-    <hr>
-
-    <div class="panel">
-        Here you find the same text and markup wrapped in the copy component from <b>_components.copy.scss</b>.
-    </div>
-    <div class="copy">
-        <h1>Headline h1... once more using _components.copy-class</h1>
-        <h1>Headline h1
-            <small>with small, so cute</small>
-        </h1>
-        <p>
-            Followed by paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at atque cumque cupiditate delectus dolore eum illo laborum maxime neque numquam, odit omnis quod reprehenderit sequi tenetur veritatis voluptatum.
-        </p>
-        <h2>This is a h2 headline</h2>
-        <p>
-            Lorem ipsum dolor sit amet, <i>consectetur adipisicing elit</i>. Et, ipsa, placeat! Accusantium adipisci aut dolores excepturi facere iure magni nihil odio provident quas qui sequi tempora, vel? Fuga, maiores, velit. Accusantium blanditiis commodi corporis cupiditate debitis dolore
-            dolorem
-            eius
-            error, explicabo fugit iure laudantium molestiae necessitatibus nostrum numquam odit officia officiis quas quidem repellendus, sint sunt tempora, ut vel voluptates.
-        </p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <blockquote>
-            Sometimes we need a <b>blockquote</b>
-        </blockquote>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at atque cumque cupiditate delectus dolore eum illo laborum maxime neque numquam, odit omnis quod reprehenderit sequi tenetur veritatis voluptatum.
-        </p>
-        <h3>Down to h3</h3>
-        <b>A short list</b>
-        <ul>
-            <li>List item 1</li>
-            <li>One more item in the List</li>
-            <li>Three is a very good number. Nearly as good as 42!</li>
-        </ul>
-    </div>
-
-</div>
+            <div class="panel panel--info">
+                In the first example you see plain HTML-elements (h1, p, ...) with the minimal styling found in the <b>settings-files</b> and some files like <b>_typography.scss</b> and <b>_generic.base.scss</b>
+            </div>
+            <h1>Headline h1</h1>
+            <h1>Headline h1
+                <small>with small, so cute</small>
+            </h1>
+            <p>
+                Followed by paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at atque cumque cupiditate delectus dolore eum illo laborum maxime neque numquam, odit omnis quod reprehenderit sequi tenetur veritatis voluptatum.
+            </p>
+            <h2>This is a h2 headline</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ipsa, placeat! Accusantium adipisci aut dolores excepturi facere iure magni nihil odio provident quas qui sequi tempora, vel? Fuga, maiores, velit. Accusantium blanditiis commodi corporis cupiditate debitis dolore dolorem
+                eius
+                error, explicabo fugit iure laudantium molestiae necessitatibus nostrum numquam odit officia officiis quas quidem repellendus, sint sunt tempora, ut vel voluptates.
+            </p>
+            <blockquote>
+                Sometimes we need a blockquote
+            </blockquote>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at atque cumque cupiditate delectus dolore eum illo laborum maxime neque numquam, odit omnis quod reprehenderit sequi tenetur veritatis voluptatum.
+            </p>
+            <h3>Down to h3</h3>
+            <b>A short list</b>
+            <ul>
+                <li>List item 1</li>
+                <li>One more item in the List</li>
+                <li>Three is a very good number. Nearly as good as 42!</li>
+            </ul>
+        </div>
 
 
-</body>
+        <div class="row row--centered row--spaced">
+            <hr class="divider">
+            <h2>Improved styling for typographic elements.</h2>
+            <div class="panel panel--info">
+                Here you find the same text and markup wrapped in the copy component from <b>_components.copy.scss</b>.
+                <br>
+                <br>
+                The copy component adds spacing to first-level-elements (which might come from a wysiwyg-editor) and removes empty elements visually.
+                <br>
+                <br>
+                <b>The copy-component adds one level of css-specificity.</b>
+            </div>
+            <div class="copy">
+                <h1>Headline h1... once more using _components.copy-class</h1>
+                <h1>Headline h1
+                    <small>with small, so cute</small>
+                </h1>
+                <p>
+                    Followed by paragraph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at atque cumque cupiditate delectus dolore eum illo laborum maxime neque numquam, odit omnis quod reprehenderit sequi tenetur veritatis voluptatum.
+                </p>
+                <h2>This is a h2 headline</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, <i>consectetur adipisicing elit</i>. Et, ipsa, placeat! Accusantium adipisci aut dolores excepturi facere iure magni nihil odio provident quas qui sequi tempora, vel? Fuga, maiores, velit. Accusantium blanditiis commodi corporis cupiditate debitis
+                    dolore
+                    dolorem
+                    eius
+                    error, explicabo fugit iure laudantium molestiae necessitatibus nostrum numquam odit officia officiis quas quidem repellendus, sint sunt tempora, ut vel voluptates.
+                </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <blockquote>
+                    Sometimes we need a <b>blockquote</b>
+                </blockquote>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at atque cumque cupiditate delectus dolore eum illo laborum maxime neque numquam, odit omnis quod reprehenderit sequi tenetur veritatis voluptatum.
+                </p>
+                <h3>Down to h3</h3>
+                <b>A short list</b>
+                <ul>
+                    <li>List item 1</li>
+                    <li>One more item in the List</li>
+                    <li>Three is a very good number. Nearly as good as 42!</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </body>
 </html>

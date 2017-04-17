@@ -27,7 +27,6 @@ body {
     background-color: $color-body;
     color: $color-font;
     font-family: $font-basefont;
-    @include baseui-fontsize($font-size-base); // = 16px
     margin: 0;
     padding: 0;
 }

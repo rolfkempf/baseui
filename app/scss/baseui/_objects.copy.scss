@@ -10,6 +10,8 @@ useful for content coming from a content-management-system
         display: block;
     }
 
+    margin-bottom: $space*4;
+
     //hide all empty elements
     > :empty {
         display: none;

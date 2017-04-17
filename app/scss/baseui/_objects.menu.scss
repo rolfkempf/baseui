@@ -1,20 +1,20 @@
 /**
-<div class="menu">
+<nav class="menu">
     <ul class="menu__list">
         <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
         <li class="menu__item menu__item--active"><a class="menu__link" href="#">Item 2</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Item 3</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
     </ul>
-</div>
-<div class="menu menu--vertical">
+</nav>
+<nav class="menu menu--vertical">
     <ul class="menu__list ">
         <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Item 2</a></li>
         <li class="menu__item menu__item--active"><a class="menu__link" href="#">Item 3</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
     </ul>
-</div>
+</nav>
  */
 .menu {
     position: relative;

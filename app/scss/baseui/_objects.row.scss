@@ -32,8 +32,9 @@
         }
     }
 
-    &--grey {
-        background-color: $color-lightgray;
+    &--spaced {
+        padding-bottom: $space*5;
+        padding-top: $space*5;
     }
 
 }

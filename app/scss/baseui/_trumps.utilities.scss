@@ -13,3 +13,30 @@
 }
 
 
+.centered {
+    text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.no-border {
+    border: none;
+}
+
+
+//todo where to put this?
+.align {
+    &--center {
+        text-align: center;
+    }
+    &--left {
+        text-align: left;
+    }
+    &--right {
+        text-align: right;
+    }
+}

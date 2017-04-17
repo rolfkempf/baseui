@@ -1,0 +1,79 @@
+a.button,
+button.button,
+input[type=button].button,
+input[type=reset].button,
+input[type=submit].button {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: $border-radius-default;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+    padding: $space $space*2.5;
+    text-align: center;
+    display: inline-block;
+    @include baseui-fontsize(1.4rem);
+
+    &:hover {
+        background-color: darken($color-primary, 5%);
+        border: 1px solid darken($color-primary, 10%);
+    }
+
+    //doesn´t work on submits-elements
+    &--large {
+        @include baseui-fontsize($font-size-base*1.25);
+
+        font-weight: 600;
+        padding: $space*1.5 $space*1.75;
+    }
+
+    &--block {
+        width: 100%;
+        display: block;
+    }
+
+    &--info {
+        background-color: $color-info;
+        border-color: $color-info;
+        color: $color-font;
+
+        &:hover {
+            background-color: darken($color-info, 5%);
+            border-color: darken($color-info, 15%);
+        }
+    }
+
+    &--success {
+        background-color: $color-success;
+        border-color: $color-success;
+        color: $color-font;
+
+        &:hover {
+            background-color: darken($color-success, 5%);
+            border-color: darken($color-success, 25%);
+        }
+    }
+
+    &--warning {
+        background-color: $color-warning;
+        border-color: $color-warning;
+        color: $color-font;
+
+        &:hover {
+            background-color: darken($color-warning, 5%);
+            border-color: darken($color-warning, 15%);
+        }
+    }
+
+    &--failure {
+        background-color: $color-failure;
+        border-color: $color-failure;
+        color: $color-font;
+
+        &:hover {
+            background-color: darken($color-failure, 5%);
+            border-color: darken($color-failure, 15%);
+        }
+    }
+
+}
