@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>baseui - just do less</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+
+        <header class="row hero">
+            <div class="row--centered">
+                <a class="" href="index.html">Home</a>
+                <h1 class="hero__title">
+                    baseui
+                    <small>a very limited css-framework</small>
+                </h1>
+            </div>
+        </header>
+
+
+        <div class="row row--centered ">
+            <h1>Table</h1>
+            <p>Default tables can be improved by adding some modifiers.</p>
+        </div>
+
+
+        <div class="row row--centered row--spaced">
+            <h2>Table</h2>
+            <div class="panel panel--info">
+                A standard table with th-elements. Alignment of columns can be added via <b>.align-utility</b>
+            </div>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th >Power</th>
+                </tr>
+                <tr>
+                    <td>Wolverine</td>
+                    <td>Healing Factor</td>
+                </tr>
+                <tr>
+                    <td>Cyclops</td>
+                    <td>Optical Blast</td>
+                </tr>
+                <tr>
+                    <td>Longshot</td>
+                    <td>Luck</td>
+                </tr>
+                <tr>
+                    <td>Dazzler</td>
+                    <td>Light manipulation</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="row row--centered row--spaced">
+            <h2>Table variations</h2>
+            <div class="panel panel--info">
+                Zebra-style table: <b>.table--striped</b>
+            </div>
+            <table class="table table--striped">
+                <tr>
+                    <th>Name</th>
+                    <th>Power</th>
+                </tr>
+                <tr>
+                    <td>Wolverine</td>
+                    <td>Healing Factor</td>
+                </tr>
+                <tr>
+                    <td>Cyclops</td>
+                    <td>Optical Blast</td>
+                </tr>
+                <tr>
+                    <td>Longshot</td>
+                    <td>Luck</td>
+                </tr>
+                <tr>
+                    <td>Dazzler</td>
+                    <td>Light manipulation</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row row--centered row--spaced">
+            <div class="panel panel--info">
+                Add a border to the table: <b>.table--bordered</b>
+            </div>
+            <table class="table table--bordered">
+                <tr>
+                    <th>Name</th>
+                    <th >Power</th>
+                </tr>
+                <tr>
+                    <td>Wolverine</td>
+                    <td>Healing Factor</td>
+                </tr>
+                <tr>
+                    <td>Cyclops</td>
+                    <td>Optical Blast</td>
+                </tr>
+                <tr>
+                    <td>Longshot</td>
+                    <td>Luck</td>
+                </tr>
+                <tr>
+                    <td>Dazzler</td>
+                    <td>Light manipulation</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row row--centered row--spaced">
+            <div class="panel panel--info">
+                Show lines: <b>.table--lined</b>
+            </div>
+            <table class="table table--lined">
+                <tr>
+                    <th>Name</th>
+                    <th >Power</th>
+                </tr>
+                <tr>
+                    <td>Wolverine</td>
+                    <td>Healing Factor</td>
+                </tr>
+                <tr>
+                    <td>Cyclops</td>
+                    <td>Optical Blast</td>
+                </tr>
+                <tr>
+                    <td>Longshot</td>
+                    <td>Luck</td>
+                </tr>
+                <tr>
+                    <td>Dazzler</td>
+                    <td>Light manipulation</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row row--centered row--spaced">
+            <div class="panel panel--info">
+                Compact table: <b>.table--compact</b>
+            </div>
+            <table class="table table--compact">
+                <tr>
+                    <th>Name</th>
+                    <th>Power</th>
+                </tr>
+                <tr>
+                    <td>Wolverine</td>
+                    <td>Healing Factor</td>
+                </tr>
+                <tr>
+                    <td>Cyclops</td>
+                    <td>Optical Blast</td>
+                </tr>
+                <tr>
+                    <td>Longshot</td>
+                    <td>Luck</td>
+                </tr>
+                <tr>
+                    <td>Dazzler</td>
+                    <td>Light manipulation</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row row--centered row--spaced">
+            <div class="panel panel--info">
+                Give the cells more space: <b>.table--cozy</b>
+            </div>
+            <table class="table table--cozy">
+                <tr>
+                    <th>Name</th>
+                    <th >Power</th>
+                </tr>
+                <tr>
+                    <td>Wolverine</td>
+                    <td>Healing Factor</td>
+                </tr>
+                <tr>
+                    <td>Cyclops</td>
+                    <td>Optical Blast</td>
+                </tr>
+                <tr>
+                    <td>Longshot</td>
+                    <td>Luck</td>
+                </tr>
+                <tr>
+                    <td>Dazzler</td>
+                    <td>Light manipulation</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row row--centered row--spaced">
+            <div class="panel panel--info">
+                Mix it all up: <b>.table--cozy.table--bordered.table--lined.table--striped</b>
+            </div>
+            <table class="table table--cozy table--bordered table--lined table--striped">
+                <tr>
+                    <th>Name</th>
+                    <th>Power</th>
+                </tr>
+                <tr>
+                    <td>Wolverine</td>
+                    <td>Healing Factor</td>
+                </tr>
+                <tr>
+                    <td>Cyclops</td>
+                    <td>Optical Blast</td>
+                </tr>
+                <tr>
+                    <td>Longshot</td>
+                    <td>Luck</td>
+                </tr>
+                <tr>
+                    <td>Dazzler</td>
+                    <td>Light manipulation</td>
+                </tr>
+            </table>
+
+
+        </div>
+
+
+    </body>
+</html>

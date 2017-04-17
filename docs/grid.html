@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>baseui - grid</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+
+        <header class="row hero">
+            <div class="row--centered">
+                <a class="" href="index.html">Home</a>
+                <h1 class="hero__title">
+                    baseui
+                    <small>a very limited css-framework</small>
+                </h1>
+            </div>
+        </header>
+
+
+        <div class="row row--centered row-spaced">
+            <h1>Grid</h1>
+            <p>The grid is based on flexbox. It distributes items evenly (.grid>.grid__item*x) or according to the classes set (.grid.grid--3-small>grid__item*x).</p>
+        </div>
+
+
+        <div class="row row--centered row-spaced">
+            <div class="panel panel--info">
+                <b>.grid</b> the grid-container
+                <br>
+                <b>.grid--gutter</b> there´s a gutter between grid-items
+            </div>
+
+            <div class="panel panel--info">
+                <b>.grid__item</b> the grid-item
+            </div>
+
+            <div class="panel panel--info">
+                <b>grid--{number of items}-{on this breakpoint and up}</b> Example: .grid--6-huge
+                <br>
+                Meaning there are 6 items (cards) in a gutterless grid, 3 in a row in breakpoint small and upwards. Starting at breakpoint huge, there are 6 in a row.
+            </div>
+
+        </div>
+
+        <div class="row row--spaced row--centered">
+            <h2>grid example
+                <small>grid grid--2-small grid--4-medium</small>
+            </h2>
+
+
+            <div class="grid grid--2-small grid--4-medium">
+
+
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card card--centered">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card card--align-right">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="divider--big">
+
+
+            <h2>Guttered grid example
+                <small>grid grid--gutter grid--2-small grid--4-medium</small>
+            </h2>
+
+
+            <div class="grid grid--gutter grid--2-small grid--4-medium">
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card card--centered">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card card--align-right">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
