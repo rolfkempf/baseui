@@ -1,11 +1,14 @@
+// Base
+//
+// Weight: 1
+//
+// Styleguide Generic.Base
 * {
-
     &,
     &:before,
     &:after {
         box-sizing: inherit;
     }
-
 }
 
 

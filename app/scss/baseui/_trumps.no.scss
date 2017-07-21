@@ -1,0 +1,33 @@
+//remove single properties
+.no {
+    //padding
+    &__padding {
+        &--top {
+            padding-top: 0;
+        }
+        &--right {
+            padding-right: 0;
+        }
+        &--left {
+            padding-left: 0;
+        }
+        &--bottom {
+            padding-bottom: 0;
+        }
+    }
+
+    &__margin {
+        &--top {
+            padding-top: 0;
+        }
+        &--right {
+            padding-right: 0;
+        }
+        &--left {
+            padding-left: 0;
+        }
+        &--bottom {
+            padding-bottom: 0;
+        }
+    }
+}

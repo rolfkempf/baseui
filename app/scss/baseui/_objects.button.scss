@@ -1,3 +1,12 @@
+// Buttons
+//
+// Default buttons for html-elements (a, button, input). Just add ```.button-class``` to element to make it work.
+//
+// <a class="button">I´m a button</a>
+//
+// Styleguide Objects.Button
+//
+
 a.button,
 button.button,
 input[type=button].button,
@@ -77,3 +86,8 @@ input[type=submit].button {
     }
 
 }
+
+
+//todo button with icons
+//todo ghost buttons
+//todo fanzy buttons with background-color-transitions? yay

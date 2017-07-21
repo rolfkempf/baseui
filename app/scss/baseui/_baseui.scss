@@ -4,49 +4,57 @@ based on the idea of ITCSS
 https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
 */
 //
+// Settings
 //
+// Setting are used for global configuration of the styles
 //
-/* --------------------------------------------------------------------------------
-SETTINGS: variables
- */
+// Weight: 10
+//
+// Styleguide Settings
 @import "settings.global";
 @import "settings.colors";
 @import "settings.radius";
 @import "settings.fonts";
 @import "settings.breakpoints";
 //
+// Tools
 //
+// Here you find mixins and useful tools (mixins, helpers, functions). No css is being output here.
 //
-/* --------------------------------------------------------------------------------
-TOOLS: mixins, helpers, functions, ...
- */
+// Weight: 20
+//
+// Styleguide Tools
 @import "tools.mixins";
 @import "tools.mappy-breakpoints";
 //
+// Generic
 //
+// Default styles for html, body and unclassed HTML-elements.
 //
-/* --------------------------------------------------------------------------------
-GENERIC: default behaviour for html, body
- */
+// Weight: 30
+//
+// Styleguide Generic
 @import "generic.base";
 @import "generic.print";
 //
+// Elements
 //
+// default styles for html-elements
 //
-/* --------------------------------------------------------------------------------
-ELEMENTS: default styles for html-elements
- */
+// Weight: 40
+//
+// Styleguide Elements
 @import "elements.form";
 @import "elements.typography";
 @import "elements.table";
 //
+// Objects
 //
+// higher level CSS-CLASSES; no cosmetic design patterns. "classed" html.elements: "better" styling for html-elements (for example by adding .form to form-element). layout-classes (row, grid)
 //
-/* --------------------------------------------------------------------------------
-OBJECTS: higher level CSS-CLASSES; no cosmetic design patterns
-"classed" html.elements: "better" styling for html-elements (for example by adding .form to form-element)
-layout-classes (row, grid)
- */
+// Weight: 50
+//
+// Styleguide Objects
 @import "objects.button";
 @import "objects.divider";
 @import "objects.form";
@@ -68,10 +76,13 @@ COMPONENTS: collections of objects; specific UI-styling
 pages, page-elements, widgets
  */
 //
+// Trumps
 //
+// overrides, hacks, defence-files
 //
-/* --------------------------------------------------------------------------------
-TRUMPS: overrides, hacks, defence-files
- */
+// Weight: 60
+//
+// Styleguide Trumps
+@import "trumps.no";
 @import "trumps.utilities";
 @import "trumps.custom";
