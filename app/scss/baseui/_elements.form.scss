@@ -7,9 +7,7 @@ input[type='text'],
 input[type='url'],
 textarea,
 select {
-    //appearance: none;
     background-color: $color-body;
-    //border: 0px solid transparent;
     border: 1px solid darken($color-border, 15%);
     border-radius: $border-radius-default;
     box-shadow: none;

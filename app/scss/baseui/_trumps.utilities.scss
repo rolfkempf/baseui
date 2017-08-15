@@ -1,34 +1,96 @@
-.clearfix {
-    *zoom: 1;
-
-    &:after,
-    &:before {
-        content: '';
-        display: table;
-    }
-
-    &:after {
-        clear: both;
-    }
-}
-
-
-.centered {
-    text-align: center;
-}
-
-
+//hide element
 .hidden {
     display: none;
 }
 
 
-.no-border {
-    border: none;
+// el ist visible from this breakpoint and up
+.visible {
+    &--small {
+        display: none;
+
+        @include bp(small) {
+            display: inherit;
+        }
+    }
+    &--medium {
+        display: none;
+
+        @include bp(medium) {
+            display: inherit;
+        }
+    }
+    &--large {
+        display: none;
+
+        @include bp(large) {
+            display: inherit;
+        }
+    }
+    &--huge {
+        display: none;
+
+        @include bp(huge) {
+            display: inherit;
+        }
+    }
 }
 
 
-//todo where to put this?
+//remove single properties
+.no {
+    //padding
+    &__padding {
+        &--top {
+            padding-top: 0;
+        }
+        &--right {
+            padding-right: 0;
+        }
+        &--left {
+            padding-left: 0;
+        }
+        &--bottom {
+            padding-bottom: 0;
+        }
+    }
+
+    &__margin {
+        &--top {
+            padding-top: 0;
+        }
+        &--right {
+            padding-right: 0;
+        }
+        &--left {
+            padding-left: 0;
+        }
+        &--bottom {
+            padding-bottom: 0;
+        }
+    }
+
+    &__border {
+        &--top {
+            border-top: none;
+        }
+        &--right {
+            border-right: none;
+        }
+        &--left {
+            border-left: none;
+        }
+        &--bottom {
+            border-bottom: none;
+        }
+    }
+
+    &__background-color {
+        background-color: transparent;
+    }
+}
+
+
 .align {
     &--center {
         text-align: center;

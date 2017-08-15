@@ -1,60 +1,25 @@
-/*
-baseui
-based on the idea of ITCSS
-https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
-*/
-//
-// Settings
-//
-// Setting are used for global configuration of the styles
-//
-// Weight: 10
-//
-// Styleguide Settings
+// --------------------------------------------------------------------------------
+// Settings: global configuration
 @import "settings.global";
 @import "settings.colors";
 @import "settings.radius";
 @import "settings.fonts";
 @import "settings.breakpoints";
-//
-// Tools
-//
-// Here you find mixins and useful tools (mixins, helpers, functions). No css is being output here.
-//
-// Weight: 20
-//
-// Styleguide Tools
+// --------------------------------------------------------------------------------
+// Tools: mixins and useful tools (mixins, helpers, functions)
 @import "tools.mixins";
 @import "tools.mappy-breakpoints";
-//
-// Generic
-//
-// Default styles for html, body and unclassed HTML-elements.
-//
-// Weight: 30
-//
-// Styleguide Generic
+// --------------------------------------------------------------------------------
+// Generic: styling for default html-elementy
 @import "generic.base";
 @import "generic.print";
-//
-// Elements
-//
-// default styles for html-elements
-//
-// Weight: 40
-//
-// Styleguide Elements
+// --------------------------------------------------------------------------------
+// Elements:also default html-elements but spiced up with with custom vars (for colors, padding,...)
 @import "elements.form";
 @import "elements.typography";
 @import "elements.table";
-//
-// Objects
-//
-// higher level CSS-CLASSES; no cosmetic design patterns. "classed" html.elements: "better" styling for html-elements (for example by adding .form to form-element). layout-classes (row, grid)
-//
-// Weight: 50
-//
-// Styleguide Objects
+// --------------------------------------------------------------------------------
+// Objects: collections of objects; specific UI-styling
 @import "objects.button";
 @import "objects.divider";
 @import "objects.form";
@@ -66,23 +31,12 @@ https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
 @import "objects.row";
 @import "objects.card";
 @import "objects.copy";
-@import "objects.hero";
+//@import "objects.hero";
 @import "objects.menu";
-//
-//
-//
-/* --------------------------------------------------------------------------------
-COMPONENTS: collections of objects; specific UI-styling
-pages, page-elements, widgets
- */
-//
-// Trumps
-//
-// overrides, hacks, defence-files
-//
-// Weight: 60
-//
-// Styleguide Trumps
-@import "trumps.no";
+// --------------------------------------------------------------------------------
+//import custom styles specific for an app or page here
+//@import client.component.scss
+// --------------------------------------------------------------------------------
+// trumps: these rules override other styles. check if you need them bc they add weight to the css output!
 @import "trumps.utilities";
 @import "trumps.custom";

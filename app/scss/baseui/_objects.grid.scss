@@ -1,7 +1,7 @@
 //todo build offset or span-columns
 //todo modifiers for alignment left/center/right
 /**
-<div class="grid grid--gutter grid--2-small grid--3-medium grid--4-large">
+<div class="grid grid--gutter grid--small-2 grid--medium-3 grid--large-4">
     <div class="grid__item">
         <div class="card">
             <div class="card__image">
@@ -27,6 +27,7 @@
  */
 $grid-colums: 2 3 4;
 
+//the container-el for the grid
 .grid {
     display: flex;
     flex-direction: column;
@@ -36,51 +37,64 @@ $grid-colums: 2 3 4;
         flex-direction: row;
     }
 
+    //grid__item = column
+    &__item {
+
+    }
+
+    //is the grid guttered?
     &--gutter {
         margin: 0;
+
         @include bp(small) {
             margin: $space -$space 0 -$space;
         }
 
+        //attributes for gid__items in a guttered grid
         .grid__item {
             padding: 0;
             display: flex;
+
             @include bp(small) {
                 padding: $space $space 0 $space;
             }
         }
     }
 
+    //columns for breakpoint small and up
     @include bp(small) {
         @each $i in $grid-colums {
-            &--#{$i}-small .grid__item {
+            &--small-#{$i} .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
             }
         }
     }
 
+    //columns for breakpoint medium and up
     @include bp(medium) {
         @each $i in $grid-colums {
-            &--#{$i}-medium .grid__item {
+            &--medium-#{$i} .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
             }
         }
     }
 
+    //columns for breakpoint large and up
     @include bp(large) {
         @each $i in $grid-colums {
-            &--#{$i}-large .grid__item {
+            &--large-#{$i} .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
             }
         }
     }
 
+    //columns for breakpoint huge and up
     @include bp(huge) {
         @each $i in $grid-colums {
-            &--#{$i}-huge .grid__item {
+            &--large-#{$i} .grid__item {
                 flex: 0 0 calc(100% / #{$i});
                 max-width: calc(100% / #{$i});
             }
