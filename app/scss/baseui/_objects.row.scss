@@ -4,12 +4,7 @@
  */
 .row {
     display: block;
-    position: relative;
-    margin-left: 0;
-    margin-right: 0;
     width: 100%;
-    padding-bottom: $space;
-    padding-top: $space;
 
     &--centered {
         padding: 0 $space;
