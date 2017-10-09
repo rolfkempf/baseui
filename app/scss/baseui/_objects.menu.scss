@@ -45,6 +45,7 @@
         transition: all 0.5s;
         display: flex;
         flex: 1 0 0%;
+        flex-grow: 0;
 
         //state active
         &--active, &--ancestor--active {
