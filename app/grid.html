@@ -24,7 +24,7 @@
 
         <div class="row row--centered row-spaced">
             <h1>Grid</h1>
-            <p>The grid is based on flexbox. It distributes items evenly (.grid>.grid__item*x) or according to the classes set (.grid.grid--3-small>grid__item*x).</p>
+            <p>The grid is based on flexbox. It distributes items evenly (.grid>.grid__item*x) or according to the classes set (.grid.grid--small-3>grid__item*x).</p>
         </div>
 
 
@@ -40,21 +40,23 @@
             </div>
 
             <div class="panel panel--info">
-                <b>grid--{number of items}-{on this breakpoint and up}</b> Example: .grid--6-huge
+                <b>grid--{on this breakpoint and up}-{number of items}</b> Example: .grid--huge-6
                 <br>
                 Meaning there are 6 items (cards) in a gutterless grid, 3 in a row in breakpoint small and upwards. Starting at breakpoint huge, there are 6 in a row.
+            </div>
+            <div class="panel panel--warning">
+                Check the settings for grid columns: <b>$grid-colums: 2 3 4 6;</b> means only these grid-columns are generated.
             </div>
 
         </div>
 
         <div class="row row--spaced row--centered">
             <h2>grid example
-                <small>grid grid--2-small grid--4-medium</small>
+                <small>grid grid--small-2 grid--medium-4</small>
             </h2>
 
 
-            <div class="grid grid--2-small grid--4-medium">
-
+            <div class="grid grid--small-2 grid--medium-4">
 
                 <div class="grid__item">
                     <div class="card">
@@ -140,11 +142,11 @@
 
 
             <h2>Guttered grid example
-                <small>grid grid--gutter grid--2-small grid--4-medium</small>
+                <small>grid grid--gutter grid--small-2 grid--medium-4</small>
             </h2>
 
 
-            <div class="grid grid--gutter grid--2-small grid--4-medium">
+            <div class="grid grid--gutter grid--small-2 grid--medium-4 grid--large-6">
                 <div class="grid__item">
                     <div class="card">
                         <div class="card__image">
@@ -170,8 +172,32 @@
                         <a class="button button--block card__link">block button</a>
                     </div>
                 </div>
+<div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
 
                 <div class="grid__item">
+                    <div class="card">
+                        <div class="card__image">
+                            <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__title">Card-Title</div>
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium amet debitis dicta dolorem eius!</div>
+                        </div>
+                        <a class="button button--block card__link">block button</a>
+                    </div>
+                </div>
+<div class="grid__item">
                     <div class="card">
                         <div class="card__image">
                             <img class="image--responsive" src="images/baseui-cow.jpg" alt="wtf">
